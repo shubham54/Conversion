@@ -1,0 +1,7 @@
+<div id='area'>
+	<input id='srch' type="text" placeholder="Enter Youtube Url" style="width: 500px; height: 25px;" ng-model='urll'>	
+</div>
+<div>
+	<button class='btn' ng-if='cgbt' ng-click='sendurl(urll)'>Convert</button>
+	<a ng-href="{{details.link}}" ng-if='!cgbt' ng-click='changebut()'><button class='btn'>Download</button></a>
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app='conversion'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Animated SVG Hover Buttons</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body ng-controller='mainCtrl'>
+
+  <div class="navbar">
+  <ul class="nav">
+    <li class="nav-item"><a href= "#" ng-click='set(1)'><i class="icon-fixed-width icon-home">Conversion</i></a></li>
+    <li class="nav-item"><a href= "#" ng-click='set(1)'><i class="icon-fixed-width icon-home"></i>home</a></li>
+    <li class="nav-item"><a href="thinacker.blogspot.in"><i class="icon-fixed-width icon-coffee"></i>blog</a></li>
+    <li class="nav-item"><a href="https://github.com/shubham54"><i class="icon-fixed-width icon-camera-retro"></i> portfolio</a></li>
+    <li class="nav-item"><a href="https://github.com/shubham54"><i class="icon-fixed-width icon-user"></i>about</a></li>
+    <li class="nav-item"><a href="https://github.com/shubham54"><i class="icon-fixed-width icon-envelope"></i>contact</a></li>
+  </ul>
+</div>
+
+<div>
+  <div id="workarea">
+    <div class="position">  
+    <div ng-if='check1' ng-include="'include/first.html'"></div>
+    <div ng-if='check2' ng-include="'include/youtubetomp3.html'"></div>
+    <div ng-if='check3' ng-include="'include/numbersystem.html'"></div>
+    </div>
+  </div>
+</div>
+<div ng-view></div>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="Js/app.js"></script>    
+</body>
+</html>
